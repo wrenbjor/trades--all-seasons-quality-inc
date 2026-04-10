@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALL SEASONS QUALITY, INC. | General Contractor in Moorestown, NJ</title>
+<meta name="description" content="Trusted General Contractor Services in Moorestown, NJ — Professional &amp; Reliable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#115E59;--pd:#0c4340;--pl:#e2ebeb;
+  --bg:#f3f4f6;--bg2:#ffffff;--bg3:#e9eaec;
+  --txt:#111827;--sub:#374151;--muted:#9ca3af;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden}
+
+/* NAV */
+nav{
+  position:fixed;inset:0 0 auto 0;z-index:999;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.85rem 2rem;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,0,0,.08);
+  box-shadow:0 1px 14px rgba(0,0,0,.07);
+}
+.nbrand{font-size:1rem;font-weight:800;color:var(--txt);text-decoration:none;letter-spacing:-.02em}
+.nbrand span{color:var(--p)}
+.nphone{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:var(--p);color:#fff;text-decoration:none;
+  padding:.5rem 1.2rem;border-radius:6px;font-weight:700;font-size:.875rem;
+  box-shadow:0 2px 12px rgba(17,94,89,.3);
+  transition:background .25s,transform .2s;
+}
+.nphone:hover{background:var(--pd);transform:translateY(-1px)}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(150deg,var(--txt) 0%,#1e2533 55%,#263045 100%);
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  padding:7rem 2rem 7rem;
+}
+/* Shield shape accent in hero */
+.hero-shield{
+  position:absolute;right:5%;top:50%;transform:translateY(-50%);
+  opacity:.06;font-size:22rem;color:#fff;
+  line-height:1;pointer-events:none;
+  font-family:'Font Awesome 6 Free';font-weight:900;
+  content:'132';
+}
+.hero-glow{
+  position:absolute;right:0;top:0;
+  width:60%;height:100%;
+  background:radial-gradient(ellipse at 80% 50%,rgba(17,94,89,.18) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-wrap{position:relative;z-index:2;max-width:1100px;margin:0 auto;width:100%}
+.badge{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  padding:.35rem .9rem;border-radius:6px;
+  font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.85);margin-bottom:1.4rem;
+}
+.hero h1{
+  font-size:clamp(2.3rem,6vw,5rem);font-weight:900;
+  line-height:1.04;letter-spacing:-.035em;color:#fff;margin-bottom:1rem;
+}
+.hero h1 em{color:var(--p);font-style:normal}
+.hero-sub{
+  font-size:clamp(.95rem,2vw,1.15rem);color:rgba(255,255,255,.7);
+  max-width:580px;line-height:1.65;margin-bottom:2.4rem;
+}
+.ctas{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.btn-main{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:var(--p);color:#fff;text-decoration:none;
+  padding:.95rem 2rem;border-radius:6px;font-weight:700;font-size:1rem;
+  box-shadow:0 4px 20px rgba(17,94,89,.35);
+  transition:background .25s,transform .25s,box-shadow .25s;
+}
+.btn-main:hover{background:var(--pd);transform:translateY(-2px);box-shadow:0 8px 28px rgba(17,94,89,.5)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:transparent;color:#fff;text-decoration:none;
+  padding:.93rem 2rem;border-radius:6px;font-weight:600;font-size:1rem;
+  border:2px solid rgba(255,255,255,.2);
+  transition:border-color .25s,background .25s;
+}
+.btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.07)}
+.trust-badges{
+  display:flex;gap:1.5rem;flex-wrap:wrap;
+  margin-top:2.5rem;padding-top:2rem;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.tbadge{
+  display:flex;align-items:center;gap:.5rem;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  padding:.4rem .9rem;border-radius:100px;
+  font-size:.75rem;color:rgba(255,255,255,.8);font-weight:600;
+}
+.tbadge i{color:var(--p);font-size:.8rem}
+
+/* SERVICES */
+.services{background:var(--bg);padding:5.5rem 2rem}
+.sec-hdr{text-align:center;margin-bottom:3rem}
+.sec-label{
+  display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--p);margin-bottom:.6rem;
+}
+.sec-hdr h2{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:800;letter-spacing:-.025em;color:var(--txt)}
+.sec-hdr p{color:var(--sub);font-size:1rem;max-width:520px;margin:.65rem auto 0;line-height:1.6}
+.svc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;max-width:1100px;margin:0 auto;
+}
+.scard{
+  background:var(--bg2);border-radius:12px;padding:2rem;
+  border:1px solid rgba(0,0,0,.07);
+  box-shadow:0 2px 16px rgba(0,0,0,.06);
+  transition:transform .3s,box-shadow .3s;
+}
+.scard:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
+.scard-ico{
+  width:48px;height:48px;border-radius:10px;
+  background:var(--pl);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;color:var(--p);margin-bottom:1.2rem;
+}
+.scard h3{font-size:1.02rem;font-weight:700;color:var(--txt);margin-bottom:.4rem}
+.scard p{font-size:.83rem;color:var(--muted);line-height:1.5;margin-bottom:1rem}
+.scard-link{
+  font-size:.8rem;font-weight:700;color:var(--p);display:flex;align-items:center;gap:.3rem;
+}
+.scard-link i{font-size:.75rem;transition:transform .2s}
+.scard:hover .scard-link i{transform:translateX(3px)}
+
+/* WHY US */
+.why{background:var(--bg2);padding:5.5rem 2rem}
+.why-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+}
+.why-copy .sec-label{display:block;text-align:left;margin-bottom:.5rem}
+.why-copy h2{font-size:clamp(1.7rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.025em;color:var(--txt);margin-bottom:1.3rem}
+.why-copy p{color:var(--sub);line-height:1.8;font-size:.975rem;margin-bottom:1.4rem}
+.check-list{display:flex;flex-direction:column;gap:.65rem}
+.citem{display:flex;align-items:flex-start;gap:.75rem;font-size:.92rem;color:var(--txt)}
+.citem i{color:var(--p);font-size:1rem;flex-shrink:0;margin-top:.1rem}
+.citem-text strong{font-weight:700}
+.citem-text span{color:var(--sub);font-size:.85rem;display:block}
+/* shield card */
+.shield-card{
+  background:var(--bg);border-radius:16px;padding:2.5rem;text-align:center;
+  border:1px solid rgba(0,0,0,.07);
+  box-shadow:0 4px 24px rgba(0,0,0,.07);
+}
+.shield-ico{
+  width:80px;height:80px;border-radius:50%;
+  background:var(--p);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2rem;color:#fff;
+  margin:0 auto 1.3rem;
+  box-shadow:0 4px 20px rgba(17,94,89,.35);
+}
+.shield-card h3{font-size:1.3rem;font-weight:800;color:var(--txt);margin-bottom:.6rem}
+.shield-card p{color:var(--sub);font-size:.9rem;line-height:1.6;margin-bottom:1.6rem}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--bg);padding:5.5rem 2rem}
+.t-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:1.5rem;max-width:1100px;margin:0 auto;
+}
+.tcard{
+  background:var(--bg2);border-radius:12px;padding:2rem;
+  border:1px solid rgba(0,0,0,.07);
+  box-shadow:0 2px 14px rgba(0,0,0,.05);
+  transition:transform .3s,box-shadow .3s;
+}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(0,0,0,.1)}
+.tcard-stars{display:flex;align-items:center;justify-content:space-between;margin-bottom:.9rem}
+.stars{color:#f59e0b;letter-spacing:1px;font-size:.9rem}
+.google-badge{font-size:.68rem;color:var(--muted);font-weight:700;display:flex;align-items:center;gap:.3rem}
+.google-badge i{color:#4285f4}
+.tcard p{color:var(--sub);line-height:1.7;font-size:.93rem;font-style:italic;margin-bottom:.9rem}
+.rname{font-size:.8rem;color:var(--p);font-weight:600}
+
+/* CTA */
+.cta-band{
+  background:linear-gradient(135deg,var(--p) 0%,var(--pd) 100%);
+  padding:5rem 2rem;text-align:center;
+}
+.cta-band h2{font-size:clamp(1.9rem,5vw,3.2rem);font-weight:900;letter-spacing:-.03em;color:#fff;margin-bottom:.9rem}
+.cta-band p{font-size:1.05rem;color:rgba(255,255,255,.88);max-width:480px;margin:0 auto 2.4rem;line-height:1.6}
+.btn-cta{
+  display:inline-flex;align-items:center;gap:.7rem;
+  background:#fff;color:var(--p);text-decoration:none;
+  padding:1.1rem 2.6rem;border-radius:6px;font-weight:800;font-size:1.1rem;
+  box-shadow:0 4px 20px rgba(0,0,0,.15);
+  transition:transform .25s,box-shadow .25s;
+}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.25)}
+
+/* FOOTER */
+footer{background:var(--txt);padding:2.2rem 2rem;text-align:center}
+footer p{color:rgba(255,255,255,.45);font-size:.82rem}
+footer a{color:var(--p);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* ANIMATE */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-wrap>*{animation:fadeUp .55s ease both}
+.hero-wrap>*:nth-child(1){animation-delay:.1s}
+.hero-wrap>*:nth-child(2){animation-delay:.2s}
+.hero-wrap>*:nth-child(3){animation-delay:.28s}
+.hero-wrap>*:nth-child(4){animation-delay:.36s}
+.hero-wrap>*:nth-child(5){animation-delay:.44s}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .why-inner{grid-template-columns:1fr;gap:2.5rem}
+  .ctas{flex-direction:column;align-items:flex-start}
+  .hero-shield{display:none}
+}
+@media(max-width:480px){
+  .svc-grid{grid-template-columns:1fr}
+  .t-grid{grid-template-columns:1fr}
+  nav{padding:.75rem 1rem}
+  .trust-badges{gap:.75rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nbrand" href="#"><span>ALL SEASONS QUALITY, INC.</span></a>
+  <a class="nphone" href="tel:8563139794"><i class="fas fa-phone"></i>856-313-9794</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-shield"><i class="fas fa-shield-alt"></i></div>
+  <div class="hero-wrap">
+    <div class="badge"><i class="fas fa-hard-hat"></i>&nbsp;General Contractor &mdash; Moorestown, NJ</div>
+    <h1><em>ALL SEASONS QUALITY, INC.</em><br>Trusted General Contractor</h1>
+    <p class="hero-sub">Trusted General Contractor Services in Moorestown, NJ — Professional &amp; Reliable.</p>
+    <div class="ctas">
+      <a class="btn-main" href="tel:8563139794"><i class="fas fa-phone"></i>Call Now: 856-313-9794</a>
+      <a class="btn-ghost" href="#services"><i class="fas fa-chevron-down"></i>Services</a>
+    </div>
+    <div class="trust-badges">
+      <div class="tbadge"><i class="fas fa-shield-alt"></i>Licensed &amp; Insured</div>
+      <div class="tbadge"><i class="fas fa-star"></i>5-Star Rated</div>
+      <div class="tbadge"><i class="fas fa-tag"></i>Free Estimates</div>
+      <div class="tbadge"><i class="fas fa-map-marker-alt"></i>Serving Moorestown</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="sec-hdr">
+    <span class="sec-label">What We Offer</span>
+    <h2>Our General Contractor Services</h2>
+    <p>From small repairs to large projects, ALL SEASONS QUALITY, INC. delivers quality results across Moorestown and surrounding areas.</p>
+  </div>
+  <div class="svc-grid">
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-check-circle"></i></div>
+        <h3>Home Renovations</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-star"></i></div>
+        <h3>New Construction</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-award"></i></div>
+        <h3>Project Management</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-shield-alt"></i></div>
+        <h3>Kitchen &amp; Bath Remodels</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-hard-hat"></i></div>
+        <h3>Additions &amp; Extensions</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="scard">
+        <div class="scard-ico"><i class="fas fa-handshake"></i></div>
+        <h3>Free Estimates</h3>
+        <p>Professional service delivered on time and within budget.</p>
+        <div class="scard-link">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div></div>
+</section>
+
+<!-- WHY US / ABOUT -->
+<section class="why" id="about">
+  <div class="why-inner">
+    <div class="why-copy">
+      <span class="sec-label">Why Choose Us</span>
+      <h2>Professional Service You Can Trust</h2>
+      <p>ALL SEASONS QUALITY, INC. is your locally trusted general contractor team serving Moorestown, NJ and surrounding communities. From small jobs to large projects, we bring professionalism and quality to every task.</p>
+      <div class="check-list">
+        <div class="citem">
+          <i class="fas fa-check-circle"></i>
+          <div class="citem-text"><strong>Licensed &amp; Fully Insured</strong><span>Complete peace of mind on every job.</span></div>
+        </div>
+        <div class="citem">
+          <i class="fas fa-check-circle"></i>
+          <div class="citem-text"><strong>Free Written Estimates</strong><span>Know the cost before work begins.</span></div>
+        </div>
+        <div class="citem">
+          <i class="fas fa-check-circle"></i>
+          <div class="citem-text"><strong>Local Experts</strong><span>Proudly serving Moorestown &amp; surrounding areas.</span></div>
+        </div>
+        <div class="citem">
+          <i class="fas fa-check-circle"></i>
+          <div class="citem-text"><strong>Satisfaction Guaranteed</strong><span>We don&rsquo;t stop until you&rsquo;re happy.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="shield-card">
+      <div class="shield-ico"><i class="fas fa-hard-hat"></i></div>
+      <h3>General Contractor Professionals</h3>
+      <p>Reliable, professional general contractor services tailored to your needs in Moorestown, NJ.</p>
+      <a class="btn-main" href="tel:8563139794" style="justify-content:center">
+        <i class="fas fa-phone"></i>856-313-9794
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="sec-hdr">
+    <span class="sec-label">Customer Reviews</span>
+    <h2>Trusted by Your Neighbors</h2>
+    <p>See why homeowners and businesses in Moorestown choose ALL SEASONS QUALITY, INC..</p>
+  </div>
+  <div class="t-grid">
+      <div class="tcard">
+        <div class="tcard-stars">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p>&ldquo;Showed up on time, did the work right, and didn&#39;t try to upsell me on stuff I didn&#39;t need. Highly recommend.&rdquo;</p>
+        <span class="rname">&#8212; Verified Customer</span>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p>&ldquo;Best contractor I&#39;ve worked with. Professional, fairly priced, and the quality of work was excellent.&rdquo;</p>
+        <span class="rname">&#8212; Verified Customer</span>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p>&ldquo;Honest, reliable, and they stand behind their work. Will absolutely use again and refer to friends.&rdquo;</p>
+        <span class="rname">&#8212; Verified Customer</span>
+      </div></div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" id="contact">
+  <h2>Let&rsquo;s Get to Work</h2>
+  <p>Contact ALL SEASONS QUALITY, INC. for a free estimate on your general contractor project in Moorestown, NJ. No job too big or too small.</p>
+  <a class="btn-cta" href="tel:8563139794"><i class="fas fa-phone-alt"></i>Call 856-313-9794</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 ALL SEASONS QUALITY, INC. &nbsp;&bull;&nbsp; General Contractor in Moorestown, NJ &nbsp;&bull;&nbsp; <a href="tel:8563139794">856-313-9794</a></p>
+</footer>
+
+</body>
+</html>
